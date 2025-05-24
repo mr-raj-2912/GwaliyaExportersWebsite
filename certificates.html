@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates - Gwaliya International Exporter</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="View the certificates of Gwaliya International Exporter, showcasing our compliance with Indian government and export board standards.">
+
+  <!-- Keywords -->
+  <meta name="keywords" content="Gwaliya International Exporter, export certificates, agricultural export certifications, Indian government certificates, APEDA, FSSAI">
+
+  <!-- Author -->
+  <meta name="author" content="Gwaliya International Exporter LLP">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Certificates - Gwaliya International Exporter">
+  <meta property="og:description" content="View the certificates of Gwaliya International Exporter, showcasing our compliance with Indian government and export board standards.">
+  <meta property="og:image" content="https://yourdomain.com/images/GwaliyaLogo.png">
+  <meta property="og:url" content="https://gwaliyainternationalexporter.com/certificates.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Certificates - Gwaliya International Exporter">
+  <meta name="twitter:description" content="View the certificates of Gwaliya International Exporter, showcasing our compliance with Indian government and export board standards.">
+  <meta name="twitter:image" content="https://yourdomain.com/images/GwaliyaLogo.png">
+
+  <!-- Favicon -->
+  <link href="images/circle-logo.png" rel="icon">
+
+  <!-- Google Fonts (Poppins) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Fontawesome Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css"> <!-- Link to your existing stylesheet -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar Styles (same as your main page) */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .logo p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #1a3c34;
+    }
+
+    .logo a {
+      text-decoration: none;
+    }
+
+    #menu-toggler {
+      display: none;
+    }
+
+    #hamburger-btn {
+      display: none;
+      cursor: pointer;
+    }
+
+    .all-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .all-links li a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .all-links li a:hover {
+      color: #28a745;
+    }
+
+    /* Certificates Section */
+    .certificates-section {
+      padding: 60px 20px;
+      position: relative;
+      overflow: hidden;
+      min-height: 100vh;
+    }
+
+    .certificates-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('images/leaf-pattern.png') repeat;
+      opacity: 0.05;
+      z-index: 0;
+    }
+
+    .certificates-section h2 {
+      font-size: 2.5rem;
+      color: #1a3c34;
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .certificates-section h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #28a745;
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+    .certificates-section p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #5a6b5e;
+      margin-bottom: 40px;
+      font-style: italic;
+      position: relative;
+      z-index: 1;
+    }
+
+    .certificates-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .certificate-card {
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .certificate-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .certificate-card img:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .certificate-card .caption {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #2c3e50;
+      font-weight: 500;
+    }
+
+
+    .fixed-bottom-corner {
+  position: fixed;
+  bottom: 84px; /* Distance from the bottom edge */
+  right: 15px; /* Distance from the right edge */
+  z-index: 1000; /* Ensures it stays above other elements */
+  padding: 5px; /* Optional: Add padding */
+  border-radius: 8px; /* Optional: Rounded corners */ 
+}
+
+.wp-hover-container::after {
+  content: "Whatsapp Us"; /* Text to display */
+  position: absolute;
+  bottom: 23px; /* Adjust to position below the logo */
+  left: -90%;
+  transform: translateX(-50%);
+  background-color: #1eca40; /* Background color for the tooltip */
+  color: #ffffff; /* Text color */
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially not visible */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.whatsapp-logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 26%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+    /* Footer Styles (same as your main page) */
+    footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #000;
+  padding: 20px 0;
+}
+
+footer div {
+  padding: 0 10px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer span {
+  color: #fff;
+}
+
+footer a {
+    padding: 11px;
+    color: white;
+    text-decoration: none;
+    height: 0;
+}
+
+    /* Mobile Responsiveness */
+    @media (max-width: 991px) {
+      .navbar {
+        padding: 15px 20px;
+      }
+
+      .logo img {
+        width: 40px;
+      }
+
+      .logo p {
+        font-size: 1rem;
+      }
+
+      #hamburger-btn {
+        display: block;
+      }
+
+      .all-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .all-links.active {
+        display: flex;
+      }
+
+      .all-links li {
+        margin: 10px 0;
+      }
+
+      .all-links li a {
+        font-size: 1.1rem;
+      }
+
+      .certificates-section {
+        padding: 40px 15px;
+      }
+
+      .certificates-section h2 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        margin-top: revert;
+      }
+
+      .certificates-section h2::after {
+        width: 50px;
+        height: 3px;
+      }
+
+      .certificates-section p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+      }
+
+      .certificates-container {
+        grid-template-columns: 1fr; /* Stack certificates vertically on smaller screens */
+        gap: 25px;
+      }
+
+      .certificate-card {
+        margin-bottom: 25px;
+      }
+
+      .certificate-card img {
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .certificate-card img:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      .certificate-card .caption {
+        font-size: 0.9rem;
+        margin-top: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar (same as your main page) -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo"><a href="index.html">
+          <img src="images/GwaliyaLogo.png" alt="GE">
+          <p>Gwaliya International Exporter LLP</p>
+        </a></h2>
+      <input type="checkbox" id="menu-toggler">
+      <label for="menu-toggler" id="hamburger-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="green" width="24px" height="24px">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </label>
+      <ul class="all-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#services">Products</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Certificates Section -->
+  <section class="certificates-section">
+    <h2>Certificates & Memberships</h2>
+    <p>We proudly hold Indian government and export board memberships and certifications.</p>
+    <div class="certificates-container">
+      <!-- Certificate 1 -->
+      <div class="certificate-card">
+        <img src="images/APEDA_LICENSE_1.jpg" alt="APEDA Registration Certificate">
+        <div class="caption">APEDA Registration Certificate</div>
+      </div>
+      <!-- Certificate 2 -->
+      <div class="certificate-card">
+        <img src="images/APEDA_LICENSE_2.jpg" alt="Export Product Codes Certificate">
+        <div class="caption">APEDA Registration Certificate</div>
+      </div>
+      <!-- Certificate 3 -->
+      <div class="certificate-card">
+        <img src="images/CERTIFICATE_OF_IEC.jpg" alt="Importer-Exporter Code (IEC) Certificate">
+        <div class="caption">Importer-Exporter Code (IEC) Certificate</div>
+      </div>
+      <!-- Certificate 4 -->
+      <div class="certificate-card">
+        <img src="images/Udyam Registration Certificate.jpg" alt="Udyam Registration Certificate">
+        <div class="caption">Udyam Registration Certificate</div>
+      </div>
+      <!-- Certificate 5 -->
+      <div class="certificate-card">
+        <img src="images/FSSAI LICENSE 1.jpg" alt="FSSAI License 1">
+        <div class="caption">FSSAI License 1</div>
+      </div>
+      <!-- Certificate 6 -->
+      <div class="certificate-card">
+        <img src="images/FSSAI LICENSE 2.jpg" alt="FSSAI License 2">
+        <div class="caption">FSSAI License 2</div>
+      </div>
+    </div>
+  </section>
+
+  <p class="fixed-bottom-corner">
+    <a href="https://wa.me/+918320890369" target="_blank" class="wp-hover-container">
+      <img class="whatsapp-logo" src="images/wp-logo.jpeg" alt="WhatsApp Logo">
+    </a>
+  </p>
+
+  <!-- Footer (same as your main page) -->
+  <footer>
+    <div>
+      <span>2024 © copyright Gwaliya International Exporter. Designed By<a
+          href="https://www.linkedin.com/in/rajtukadiya/" target="_blank">Raj Tukadiya</a></span>
+      <span class="link">
+        <a href="#">Home</a>
+        <a href="#contact">Contact</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript for Navbar Toggle (same as your main page) -->
+  <script>
+    const menuToggler = document.getElementById('menu-toggler');
+    const more = document.getElementById('hamburger-btn');
+    const links = document.querySelector('.all-links');
+    more.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+
+    links.addEventListener('click', () => {
+      links.classList.remove('active');
+      menuToggler.checked = !menuToggler.checked;
+    });
+  </script>
+</body>
+</html>
