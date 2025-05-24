@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,8 +40,6 @@
   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
 </head>
-
-
 <body>
   <header>
     <nav class="navbar">
@@ -68,20 +65,56 @@
     </nav>
   </header>
 
-  <section class="homepage" id="home">
-    <div class="content">
-      <div class="text">
-        <h1>From Local Roots to Worldwide Reach.</h1>
-        <p>
-          Delivering farm-fresh fruits and vegetables to markets worldwide with unmatched quality and care. <br> From
-          our fields to your tables, we ensure excellence in every shipment.</p>
-      </div>
-      <div class="content-button">
-        <a href="products.html">Our Products</a>
-        <a href="contact.html">Get in Touch</a>
-      </div>
-      
-    </div>
+  <section class="services" id="services">
+    <h2>Our Products</h2>
+    <p>Explore our fresh fruits, vegetables, premium rice, and more.</p>
+    <ul class="cards">
+      <li class="card">
+        <img src="images/indianMango.webp" alt="img">
+        <h3>Indian Mango</h3>
+        <p>Sweet and ripe mangoes for a tropical treat.</p>
+      </li>
+      <li class="card">
+        <img src="images/Banana.webp" alt="Banana">
+        <h3>Banana</h3>
+        <p>Delicious bananas rich in nutrients and flavor.</p>
+      </li>
+      <li class="card">
+        <img src="images/Pomegranate.webp" alt="Pomegranate">
+        <h3>Pomegranate</h3>
+        <p>Juicy and nutrient-rich pomegranates, perfect for a healthy diet.</p>
+      </li>
+      <li class="card">
+        <img src="images/onion.jpg" alt="Onion">
+        <h3>Onion</h3>
+        <p>Fresh and flavorful onions, essential for any kitchen.</p>
+      </li>
+      <li class="card">
+        <img src="images/potato.jpg" alt="Potato">
+        <h3>Potato</h3>
+        <p>Versatile and high-quality potatoes for your recipes.</p>
+      </li>
+      <li class="card">
+        <img src="images/Green-chilli.webp" alt="Green Chillie">
+        <h3>Green Chillie</h3>
+        <p>Spicy and fresh green chillies to add a fiery kick.</p>
+      </li>
+      <li class="card">
+        <img src="images/basmati-rice.jpg" alt="Basmati Rice">
+        <h4>Basmati Rice</h4>
+        <p>Premium long-grain aromatic rice for exquisite dishes.</p>
+      </li>
+      <li class="card">
+        <img src="images/ir64-rice.jpg" alt="IR64 Rice">
+        <h4>IR64 Rice</h4>
+        <p>High-quality IR64 rice known for its exceptional taste.</p>
+      </li>
+      <li class="card">
+        <img src="images/non-basmati-rice.jpg" alt="Non-Basmati Rice">
+        <h4>Non-Basmati Rice</h4>
+        <p>Versatile and flavorful non-basmati rice for everyday meals.</p>
+      </li>
+    </ul>
   </section>
 
   <p class="fixed-bottom-corner">
@@ -100,6 +133,7 @@
       </span>
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
@@ -112,5 +146,4 @@
     });
   </script>
 </body>
-
 </html>

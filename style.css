@@ -206,6 +206,7 @@ section .cards {
 section.about {
   margin: 0 auto;
   max-width: 1200px;
+  margin-bottom: 35px;
 }
 
 .about .company-info {
@@ -413,6 +414,50 @@ footer a {
   footer a {
     height: 0;
   }
+
+  .certificates-section {
+        padding: 40px 15px;
+      }
+
+      .certificates-section h2 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        margin-top: revert;
+      }
+
+      .certificates-section h2::after {
+        width: 50px;
+        height: 3px;
+      }
+
+      .certificates-section p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+      }
+
+      .certificates-container {
+        grid-template-columns: 1fr; /* Stack certificates vertically on smaller screens */
+        gap: 25px;
+      }
+
+      .certificate-card {
+        margin-bottom: 25px;
+      }
+
+      .certificate-card img {
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .certificate-card img:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      .certificate-card .caption {
+        font-size: 0.9rem;
+        margin-top: 8px;
+      }
 }
 
 @media screen and (max-width: 560px) {
@@ -525,3 +570,102 @@ p {
   padding: 5px; /* Optional: Add padding */
   border-radius: 8px; /* Optional: Rounded corners */ 
 }
+
+.certificates-section {
+      padding: 60px 20px;
+      position: relative;
+      overflow: hidden;
+      min-height: 100vh;
+    }
+
+    .certificates-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('images/leaf-pattern.png') repeat;
+      opacity: 0.05;
+      z-index: 0;
+    }
+
+    .certificates-section h2 {
+      font-size: 2.5rem;
+      color: #1a3c34;
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .certificates-section h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #28a745;
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+    .certificates-section p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #5a6b5e;
+      margin-bottom: 40px;
+      font-style: italic;
+      position: relative;
+      z-index: 1;
+    }
+
+    .certificates-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .certificate-card {
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .certificate-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .certificate-card img:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .certificate-card .caption {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #2c3e50;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .certificates-container {
+        grid-template-columns: 1fr; /* Stack certificates vertically on smaller screens */
+        gap: 25px;
+      }
+    }
+
+    .content-button{
+      display: flex;
+  gap: 10px; 
+    }
