@@ -1,132 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gwaliya International Exporter - Premium Fruits, Vegetables & Rice Exports</title>
-  
+  <title>Our Products - Gwaliya International Exporter</title>
+
   <!-- Meta Description -->
-  <meta name="description" content="Gwaliya International Exporter is your trusted partner for exporting premium-quality fruits, vegetables, and rice worldwide. Delivering excellence from local roots to global markets.">
+  <meta name="description"
+    content="Explore our premium range of fresh fruits, vegetables, and rice. From Indian mangoes to basmati rice, we export the finest quality produce worldwide.">
 
   <!-- Keywords -->
-  <meta name="keywords" content="Gwaliya International Exporter, fruits exporter, vegetables exporter, premium rice export, mangoes, bananas, pomegranates, onions, potatoes, green chilies, basmati rice, IR64 rice, non-basmati rice, global trade, farm-fresh produce export, international shipping, agricultural export India">
+  <meta name="keywords"
+    content="Gwaliya International Exporter, fruits exporter, vegetables exporter, premium rice export, mangoes, bananas, pomegranates, onions, potatoes, green chilies, basmati rice, IR64 rice, non-basmati rice">
 
   <!-- Author -->
   <meta name="author" content="Gwaliya International Exporter LLP">
 
-  <!-- Open Graph Metadata -->
-  <meta property="og:title" content="Gwaliya International Exporter - Premium Fruits, Vegetables & Rice Exports">
-  <meta property="og:description" content="Delivering farm-fresh produce and high-quality rice from India to global markets. Explore our range of products and join our journey in international trade.">
-  <meta property="og:image" content="https://yourdomain.com/images/GwaliyaLogo.png">
-  <meta property="og:url" content="https://gwaliyainternationalexporter.com">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card Metadata -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gwaliya International Exporter - Premium Fruits, Vegetables & Rice Exports">
-  <meta name="twitter:description" content="Delivering farm-fresh produce and high-quality rice from India to global markets. Explore our range of products and join our journey in international trade.">
-  <meta name="twitter:image" content="https://yourdomain.com/images/GwaliyaLogo.png">
-  
   <!-- Favicon -->
   <link href="images/circle-logo.png" rel="icon">
-  
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
-  
+
   <!-- Fontawesome Link for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
-</head>
-<body>
-  <header>
-    <nav class="navbar">
-      <h2 class="logo"><a href="#">
-          <img src="images/GwaliyaLogo.png" alt="GE">
-          <p>Gwaliya International Exporter LLP</p>
-        </a></h2>
-      <input type="checkbox" id="menu-toggler">
-      <label for="menu-toggler" id="hamburger-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="green" width="24px" height="24px">
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
-        </svg>
-      </label>
-      <ul class="all-links">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="services" id="services">
-    <h2>Our Products</h2>
-    <p>Explore our fresh fruits, vegetables, premium rice, and more.</p>
-    <ul class="cards">
-      <li class="card">
-        <img src="images/indianMango.webp" alt="img">
-        <h3>Indian Mango</h3>
-        <p>Sweet and ripe mangoes for a tropical treat.</p>
-      </li>
-      <li class="card">
-        <img src="images/Banana.webp" alt="Banana">
-        <h3>Banana</h3>
-        <p>Delicious bananas rich in nutrients and flavor.</p>
-      </li>
-      <li class="card">
-        <img src="images/Pomegranate.webp" alt="Pomegranate">
-        <h3>Pomegranate</h3>
-        <p>Juicy and nutrient-rich pomegranates, perfect for a healthy diet.</p>
-      </li>
-      <li class="card">
-        <img src="images/onion.jpg" alt="Onion">
-        <h3>Onion</h3>
-        <p>Fresh and flavorful onions, essential for any kitchen.</p>
-      </li>
-      <li class="card">
-        <img src="images/potato.jpg" alt="Potato">
-        <h3>Potato</h3>
-        <p>Versatile and high-quality potatoes for your recipes.</p>
-      </li>
-      <li class="card">
-        <img src="images/Green-chilli.webp" alt="Green Chillie">
-        <h3>Green Chillie</h3>
-        <p>Spicy and fresh green chillies to add a fiery kick.</p>
-      </li>
-      <li class="card">
-        <img src="images/basmati-rice.jpg" alt="Basmati Rice">
-        <h4>Basmati Rice</h4>
-        <p>Premium long-grain aromatic rice for exquisite dishes.</p>
-      </li>
-      <li class="card">
-        <img src="images/ir64-rice.jpg" alt="IR64 Rice">
-        <h4>IR64 Rice</h4>
-        <p>High-quality IR64 rice known for its exceptional taste.</p>
-      </li>
-      <li class="card">
-        <img src="images/non-basmati-rice.jpg" alt="Non-Basmati Rice">
-        <h4>Non-Basmati Rice</h4>
-        <p>Versatile and flavorful non-basmati rice for everyday meals.</p>
-      </li>
-    </ul>
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="images/GwaliyaLogo.png" alt="Gwaliya International Exporter Logo" class="logo">
+        </a>
+        <span class="company-name">Gwaliya International Exporter</span>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Products Section - 3 Column Grid -->
+  <section id="products">
+    <div class="section-title">
+      <h2>Our Premium Products</h2>
+      <p>Explore our fresh fruits, vegetables, premium rice, and more. Quality guaranteed from farm to global markets.
+      </p>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card fade-in">
+        <img src="images/indianMango.webp" alt="Fresh Indian Mango" loading="lazy">
+        <div class="product-card-content">
+          <h3>Indian Mango</h3>
+          <p>Sweet and ripe mangoes for a tropical treat. Exported fresh from the finest farms.</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <img src="images/Banana.webp" alt="Premium Banana" loading="lazy">
+        <div class="product-card-content">
+          <h3>Banana</h3>
+          <p>Delicious bananas rich in nutrients and flavor. Perfect for healthy snacking.</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <img src="images/Pomegranate.webp" alt="Juicy Pomegranate" loading="lazy">
+        <div class="product-card-content">
+          <h3>Pomegranate</h3>
+          <p>Juicy and nutrient-rich pomegranates, perfect for a healthy diet and refreshing juice.</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <img src="images/onion.jpg" alt="Fresh Onion" loading="lazy">
+        <div class="product-card-content">
+          <h3>Onion</h3>
+          <p>Fresh and flavorful onions, essential for any kitchen. High quality and long-lasting.</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <img src="images/potato.jpg" alt="Quality Potato" loading="lazy">
+        <div class="product-card-content">
+          <h3>Potato</h3>
+          <p>Versatile and high-quality potatoes for your recipes. Farm-fresh and carefully selected.</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <img src="images/Green-chilli.webp" alt="Spicy Green Chilli" loading="lazy">
+        <div class="product-card-content">
+          <h3>Green Chilli</h3>
+          <p>Spicy and fresh green chillies to add a fiery kick to your dishes.</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <img src="images/Ginger.webp" alt="Fresh Ginger" loading="lazy">
+        <div class="product-card-content">
+          <h3>Ginger</h3>
+          <p>Aromatic and fresh ginger root, perfect for cooking and health benefits.</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <img src="images/Okra.webp" alt="Fresh Okra" loading="lazy">
+        <div class="product-card-content">
+          <h3>Okra (Lady Finger)</h3>
+          <p>Fresh and tender okra, a versatile vegetable for various cuisines.</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <img src="images/basmati-rice.jpg" alt="Premium Basmati Rice" loading="lazy">
+        <div class="product-card-content">
+          <h3>Basmati Rice</h3>
+          <p>Premium long-grain aromatic rice for exquisite dishes. Aged to perfection.</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <img src="images/ir64-rice.jpg" alt="Quality IR64 Rice" loading="lazy">
+        <div class="product-card-content">
+          <h3>IR64 Rice</h3>
+          <p>High-quality IR64 rice known for its exceptional taste and cooking properties.</p>
+        </div>
+      </div>
+
+      <div class="product-card fade-in">
+        <img src="images/non-basmati-rice.jpg" alt="Non-Basmati Rice" loading="lazy">
+        <div class="product-card-content">
+          <h3>Non-Basmati Rice</h3>
+          <p>Versatile and flavorful non-basmati rice for everyday meals and special occasions.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <p class="fixed-bottom-corner">
-    <a href="https://wa.me/+918320890369" target="_blank" class="wp-hover-container">
-      <img class="whatsapp-logo" src="images/wp-logo.jpeg" alt="WhatsApp Logo">
-    </a>
-  </p>
+  <!-- Floating WhatsApp Button - Standardized -->
+  <a href="https://wa.me/+918320890369" target="_blank" rel="noopener noreferrer" class="whatsapp-btn"
+    aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
+  <!-- Footer -->
   <footer>
     <div>
-      <span>2024 © copyright Gwaliya International Exporter. Designed By<a
-          href="https://www.linkedin.com/in/rajtukadiya/" target="_blank">Raj Tukadiya</a></span>
+      <span>© 2025 Gwaliya International Exporter. Designed By <a href="https://www.linkedin.com/in/rajtukadiya/"
+          target="_blank" rel="noopener noreferrer">Raj Tukadiya</a></span>
       <span class="link">
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
@@ -134,16 +176,8 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        const navbarCollapse = document.querySelector('.navbar-collapse');
-        if (navbarCollapse.classList.contains('show')) {
-          document.querySelector('.navbar-toggler').click();
-        }
-      });
-    });
-  </script>
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
+
 </html>

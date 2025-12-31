@@ -1,119 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gwaliya International Exporter - Premium Fruits, Vegetables & Rice Exports</title>
-  
+  <title>Certificates & Memberships - Gwaliya International Exporter</title>
+
   <!-- Meta Description -->
-  <meta name="description" content="Gwaliya International Exporter is your trusted partner for exporting premium-quality fruits, vegetables, and rice worldwide. Delivering excellence from local roots to global markets.">
+  <meta name="description"
+    content="View our official certifications including APEDA Registration, IEC Certificate, Udyam Registration, and FSSAI Licenses. Trusted export partner.">
 
   <!-- Keywords -->
-  <meta name="keywords" content="Gwaliya International Exporter, fruits exporter, vegetables exporter, premium rice export, mangoes, bananas, pomegranates, onions, potatoes, green chilies, basmati rice, IR64 rice, non-basmati rice, global trade, farm-fresh produce export, international shipping, agricultural export India">
+  <meta name="keywords"
+    content="Gwaliya International Exporter, APEDA certificate, IEC certificate, FSSAI license, export certifications, Udyam registration">
 
   <!-- Author -->
   <meta name="author" content="Gwaliya International Exporter LLP">
 
-  <!-- Open Graph Metadata -->
-  <meta property="og:title" content="Gwaliya International Exporter - Premium Fruits, Vegetables & Rice Exports">
-  <meta property="og:description" content="Delivering farm-fresh produce and high-quality rice from India to global markets. Explore our range of products and join our journey in international trade.">
-  <meta property="og:image" content="https://yourdomain.com/images/GwaliyaLogo.png">
-  <meta property="og:url" content="https://gwaliyainternationalexporter.com">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card Metadata -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gwaliya International Exporter - Premium Fruits, Vegetables & Rice Exports">
-  <meta name="twitter:description" content="Delivering farm-fresh produce and high-quality rice from India to global markets. Explore our range of products and join our journey in international trade.">
-  <meta name="twitter:image" content="https://yourdomain.com/images/GwaliyaLogo.png">
-  
   <!-- Favicon -->
   <link href="images/circle-logo.png" rel="icon">
-  
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
-  
+
   <!-- Fontawesome Link for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
-  <!-- Navbar (same as your main page) -->
-  <header>
-    <nav class="navbar">
-      <h2 class="logo"><a href="#">
-          <img src="images/GwaliyaLogo.png" alt="GE">
-          <p>Gwaliya International Exporter LLP</p>
-        </a></h2>
-      <input type="checkbox" id="menu-toggler">
-      <label for="menu-toggler" id="hamburger-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="green" width="24px" height="24px">
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
-        </svg>
-      </label>
-      <ul class="all-links">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="images/GwaliyaLogo.png" alt="Gwaliya International Exporter Logo" class="logo">
+        </a>
+        <span class="company-name">Gwaliya International Exporter</span>
+      </div>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <!-- Certificates Section -->
-  <section class="certificates-section">
-    <h2>Certificates & Memberships</h2>
-    <p>We proudly hold Indian government and export board memberships and certifications.</p>
-    <div class="certificates-container">
+  <section id="certificates">
+    <div class="section-title">
+      <h2>Certificates & Memberships</h2>
+      <p>We proudly hold Indian government and export board memberships and certifications. Click to view larger.</p>
+    </div>
+
+    <div class="certificates-grid">
       <!-- Certificate 1 -->
-      <div class="certificate-card">
-        <img src="images/APEDA_LICENSE_1.jpg" alt="APEDA Registration Certificate">
+      <div class="certificate-card fade-in" onclick="openCertificateModal('images/APEDA_LICENSE_1.jpg')">
+        <img src="images/APEDA_LICENSE_1.jpg" alt="APEDA Registration Certificate Page 1" loading="lazy">
         <div class="caption">APEDA Registration Certificate</div>
       </div>
+
       <!-- Certificate 2 -->
-      <div class="certificate-card">
-        <img src="images/APEDA_LICENSE_2.jpg" alt="Export Product Codes Certificate">
-        <div class="caption">APEDA Registration Certificate</div>
+      <div class="certificate-card fade-in" onclick="openCertificateModal('images/APEDA_LICENSE_2.jpg')">
+        <img src="images/APEDA_LICENSE_2.jpg" alt="APEDA Export Product Codes" loading="lazy">
+        <div class="caption">APEDA Export Product Codes</div>
       </div>
+
       <!-- Certificate 3 -->
-      <div class="certificate-card">
-        <img src="images/CERTIFICATE_OF_IEC.jpg" alt="Importer-Exporter Code (IEC) Certificate">
+      <div class="certificate-card fade-in" onclick="openCertificateModal('images/CERTIFICATE_OF_IEC.jpg')">
+        <img src="images/CERTIFICATE_OF_IEC.jpg" alt="Importer-Exporter Code Certificate" loading="lazy">
         <div class="caption">Importer-Exporter Code (IEC) Certificate</div>
       </div>
+
       <!-- Certificate 4 -->
-      <div class="certificate-card">
-        <img src="images/Udyam Registration Certificate.jpg" alt="Udyam Registration Certificate">
+      <div class="certificate-card fade-in" onclick="openCertificateModal('images/Udyam Registration Certificate.jpg')">
+        <img src="images/Udyam Registration Certificate.jpg" alt="Udyam Registration Certificate" loading="lazy">
         <div class="caption">Udyam Registration Certificate</div>
       </div>
+
       <!-- Certificate 5 -->
-      <div class="certificate-card">
-        <img src="images/FSSAI LICENSE 1.jpg" alt="FSSAI License 1">
-        <div class="caption">FSSAI License 1</div>
+      <div class="certificate-card fade-in" onclick="openCertificateModal('images/FSSAI LICENSE 1.jpg')">
+        <img src="images/FSSAI LICENSE 1.jpg" alt="FSSAI Food Safety License Page 1" loading="lazy">
+        <div class="caption">FSSAI Food Safety License</div>
       </div>
+
       <!-- Certificate 6 -->
-      <div class="certificate-card">
-        <img src="images/FSSAI LICENSE 2.jpg" alt="FSSAI License 2">
-        <div class="caption">FSSAI License 2</div>
+      <div class="certificate-card fade-in" onclick="openCertificateModal('images/FSSAI LICENSE 2.jpg')">
+        <img src="images/FSSAI LICENSE 2.jpg" alt="FSSAI Food Safety License Page 2" loading="lazy">
+        <div class="caption">FSSAI License Details</div>
       </div>
     </div>
   </section>
 
-  <p class="fixed-bottom-corner">
-    <a href="https://wa.me/+918320890369" target="_blank" class="wp-hover-container">
-      <img class="whatsapp-logo" src="images/wp-logo.jpeg" alt="WhatsApp Logo">
-    </a>
-  </p>
+  <!-- Certificate Modal/Lightbox -->
+  <div id="certificateModal" class="modal" onclick="closeCertificateModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeCertificateModal()">&times;</button>
+      <img id="modalImage" src="" alt="Certificate">
+    </div>
+  </div>
 
+  <!-- Floating WhatsApp Button - Standardized -->
+  <a href="https://wa.me/+918320890369" target="_blank" rel="noopener noreferrer" class="whatsapp-btn"
+    aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
   <footer>
     <div>
-      <span>2024 © copyright Gwaliya International Exporter. Designed By<a
-          href="https://www.linkedin.com/in/rajtukadiya/" target="_blank">Raj Tukadiya</a></span>
+      <span>© 2025 Gwaliya International Exporter. Designed By <a href="https://www.linkedin.com/in/rajtukadiya/"
+          target="_blank" rel="noopener noreferrer">Raj Tukadiya</a></span>
       <span class="link">
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
@@ -121,19 +131,8 @@
     </div>
   </footer>
 
-  <!-- Custom JavaScript for Navbar Toggle (same as your main page) -->
-  <script>
-    const menuToggler = document.getElementById('menu-toggler');
-    const more = document.getElementById('hamburger-btn');
-    const links = document.querySelector('.all-links');
-    more.addEventListener('click', () => {
-      links.classList.toggle('active');
-    });
-
-    links.addEventListener('click', () => {
-      links.classList.remove('active');
-      menuToggler.checked = !menuToggler.checked;
-    });
-  </script>
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
+
 </html>

@@ -5,19 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gwaliya International Exporter - Premium Fruits, Vegetables & Rice Exports</title>
-  
+
   <!-- Meta Description -->
-  <meta name="description" content="Gwaliya International Exporter is your trusted partner for exporting premium-quality fruits, vegetables, and rice worldwide. Delivering excellence from local roots to global markets.">
+  <meta name="description"
+    content="Gwaliya International Exporter is your trusted partner for exporting premium-quality fruits, vegetables, and rice worldwide. Delivering excellence from local roots to global markets.">
 
   <!-- Keywords -->
-  <meta name="keywords" content="Gwaliya International Exporter, fruits exporter, vegetables exporter, premium rice export, mangoes, bananas, pomegranates, onions, potatoes, green chilies, basmati rice, IR64 rice, non-basmati rice, global trade, farm-fresh produce export, international shipping, agricultural export India">
+  <meta name="keywords"
+    content="Gwaliya International Exporter, fruits exporter, vegetables exporter, premium rice export, mangoes, bananas, pomegranates, onions, potatoes, green chilies, basmati rice, IR64 rice, non-basmati rice, global trade, farm-fresh produce export, international shipping, agricultural export India">
 
   <!-- Author -->
   <meta name="author" content="Gwaliya International Exporter LLP">
 
   <!-- Open Graph Metadata -->
   <meta property="og:title" content="Gwaliya International Exporter - Premium Fruits, Vegetables & Rice Exports">
-  <meta property="og:description" content="Delivering farm-fresh produce and high-quality rice from India to global markets. Explore our range of products and join our journey in international trade.">
+  <meta property="og:description"
+    content="Delivering farm-fresh produce and high-quality rice from India to global markets. Explore our range of products and join our journey in international trade.">
   <meta property="og:image" content="https://yourdomain.com/images/GwaliyaLogo.png">
   <meta property="og:url" content="https://gwaliyainternationalexporter.com">
   <meta property="og:type" content="website">
@@ -25,92 +28,236 @@
   <!-- Twitter Card Metadata -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Gwaliya International Exporter - Premium Fruits, Vegetables & Rice Exports">
-  <meta name="twitter:description" content="Delivering farm-fresh produce and high-quality rice from India to global markets. Explore our range of products and join our journey in international trade.">
+  <meta name="twitter:description"
+    content="Delivering farm-fresh produce and high-quality rice from India to global markets. Explore our range of products and join our journey in international trade.">
   <meta name="twitter:image" content="https://yourdomain.com/images/GwaliyaLogo.png">
-  
+
   <!-- Favicon -->
   <link href="images/circle-logo.png" rel="icon">
-  
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
-  
+
   <!-- Fontawesome Link for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
-
 <body>
-  <header>
-    <nav class="navbar">
-      <h2 class="logo"><a href="#">
-          <img src="images/GwaliyaLogo.png" alt="GE">
-          <p>Gwaliya International Exporter LLP</p>
-        </a></h2>
-      <input type="checkbox" id="menu-toggler">
-      <label for="menu-toggler" id="hamburger-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="green" width="24px" height="24px">
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
-        </svg>
-      </label>
-      <ul class="all-links">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="images/GwaliyaLogo.png" alt="Gwaliya International Exporter Logo" class="logo">
+        </a>
+        <span class="company-name">Gwaliya International Exporter</span>
+      </div>
 
-  <section class="homepage" id="home">
-    <div class="content">
-      <div class="text">
-        <h1>From Local Roots to Worldwide Reach.</h1>
-        <p>
-          Delivering farm-fresh fruits and vegetables to markets worldwide with unmatched quality and care. <br> From
-          our fields to your tables, we ensure excellence in every shipment.</p>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="content-button">
-        <a href="products.html">Our Products</a>
-        <a href="contact.html">Get in Touch</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Dynamic Typing -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Global Excellence in Agricultural Exports</h1>
+
+      <div class="dynamic-text">
+        <!-- Dynamic typing text will appear here -->
       </div>
-      
+
+      <p class="hero-description">
+        From India's finest farms to global markets, we deliver premium fruits, vegetables, and rice with unmatched
+        quality and care.
+      </p>
+
+      <div class="cta-buttons">
+        <a href="products.html" class="btn btn-primary">Explore Products</a>
+        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+      </div>
     </div>
   </section>
 
-  <p class="fixed-bottom-corner">
-    <a href="https://wa.me/+918320890369" target="_blank" class="wp-hover-container">
-      <img class="whatsapp-logo" src="images/wp-logo.jpeg" alt="WhatsApp Logo">
-    </a>
-  </p>
+  <!-- Services/Features Section - 3x2 Grid -->
+  <section id="services">
+    <div class="section-title">
+      <h2>Why Choose Gwaliya International?</h2>
+      <p>Excellence in every aspect of agricultural export</p>
+    </div>
 
+    <div class="services-grid">
+      <!-- Premium Quality -->
+      <div class="service-card fade-in">
+        <div class="service-icon">🌟</div>
+        <h3>Premium Quality Assurance</h3>
+        <p>
+          Every product undergoes rigorous quality checks to ensure only the finest produce reaches global markets.
+          Our commitment to excellence is unwavering.
+        </p>
+      </div>
+
+      <!-- Global Reach -->
+      <div class="service-card fade-in">
+        <div class="service-icon">🌍</div>
+        <h3>Global Reach</h3>
+        <p>
+          Serving customers across continents with reliable shipping and timely delivery. Your trusted partner
+          worldwide.
+        </p>
+      </div>
+
+      <!-- Farm Fresh -->
+      <div class="service-card fade-in">
+        <div class="service-icon">🌾</div>
+        <h3>Farm Fresh</h3>
+        <p>
+          Direct sourcing from premium farms ensures maximum freshness and nutritional value in every shipment.
+        </p>
+      </div>
+
+      <!-- Certified Excellence -->
+      <div class="service-card fade-in">
+        <div class="service-icon">✅</div>
+        <h3>Certified Excellence</h3>
+        <p>
+          Internationally certified and compliant with global food safety standards. Quality you can trust.
+        </p>
+      </div>
+
+      <!-- Sustainable Practices -->
+      <div class="service-card fade-in">
+        <div class="service-icon">♻️</div>
+        <h3>Sustainable Practices</h3>
+        <p>
+          Committed to environmentally responsible farming and export practices for a better tomorrow.
+        </p>
+      </div>
+
+      <!-- Expert Team -->
+      <div class="service-card fade-in">
+        <div class="service-icon">👥</div>
+        <h3>Expert Team</h3>
+        <p>
+          Decades of combined experience in agricultural export and international trade.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Highlights Section -->
+  <section id="highlights">
+    <div class="section-title">
+      <h2>Our Premium Products</h2>
+      <p>Explore our range of high-quality agricultural exports</p>
+    </div>
+
+    <div class="bento-grid">
+      <!-- Fruits -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=800&h=600&fit=crop" alt="Fresh Fruits"
+          loading="lazy">
+        <h3>Premium Fruits</h3>
+        <p>Mangoes, Bananas, Pomegranates, and more - handpicked for perfection.</p>
+        <a href="products.html" class="btn btn-secondary">View Fruits</a>
+      </div>
+
+      <!-- Vegetables -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=800&h=600&fit=crop"
+          alt="Fresh Vegetables" loading="lazy">
+        <h3>Fresh Vegetables</h3>
+        <p>Onions, Potatoes, Green Chilies - farm-fresh and export-ready.</p>
+        <a href="products.html" class="btn btn-secondary">View Vegetables</a>
+      </div>
+
+      <!-- Rice -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800&h=600&fit=crop" alt="Premium Rice"
+          loading="lazy">
+        <h3>Premium Rice</h3>
+        <p>Basmati, IR64, and Non-Basmati varieties of the highest quality.</p>
+        <a href="products.html" class="btn btn-secondary">View Rice</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section - Horizontal 4-Column Layout -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat-card fade-in">
+        <h2>500+</h2>
+        <p>Successful Shipments</p>
+      </div>
+
+      <div class="stat-card fade-in">
+        <h2>25+</h2>
+        <p>Countries Served</p>
+      </div>
+
+      <div class="stat-card fade-in">
+        <h2>100%</h2>
+        <p>Quality Guaranteed</p>
+      </div>
+
+      <!-- Featured Experience Card -->
+      <div class="stat-card featured fade-in">
+        <h2>10+</h2>
+        <p>Years Experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" style="text-align: center; padding: 6rem 1.5rem;">
+    <h2 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem;">
+      Ready to Start Your Export Journey?
+    </h2>
+    <p
+      style="font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+      Partner with Gwaliya International for premium agricultural exports that meet global standards.
+    </p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+      <a href="products.html" class="btn btn-secondary">Browse Products</a>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Button - Standardized -->
+  <a href="https://wa.me/+918320890369" target="_blank" rel="noopener noreferrer" class="whatsapp-btn"
+    aria-label="Contact us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
   <footer>
-    <div>
-      <span>2024 © copyright Gwaliya International Exporter. Designed By<a
-          href="https://www.linkedin.com/in/rajtukadiya/" target="_blank">Raj Tukadiya</a></span>
-      <span class="link">
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-      </span>
+    <p>© 2025 Gwaliya International Exporter. Designed By <a href="https://www.linkedin.com/in/rajtukadiya/"
+        target="_blank" rel="noopener noreferrer">Raj Tukadiya</a></p>
+    <div style="margin-top: 1rem;">
+      <a href="index.html" style="margin: 0 1rem;">Home</a>
+      <a href="products.html" style="margin: 0 1rem;">Products</a>
+      <a href="contact.html" style="margin: 0 1rem;">Contact</a>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        const navbarCollapse = document.querySelector('.navbar-collapse');
-        if (navbarCollapse.classList.contains('show')) {
-          document.querySelector('.navbar-toggler').click();
-        }
-      });
-    });
-  </script>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 
 </html>
